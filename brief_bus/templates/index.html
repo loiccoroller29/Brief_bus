@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>breizhibus</title>
+
+</head>
+
+<body>
+    <h1>bienvenue chez breizhibus</h1>
+    <h2>Accueil</h2>
+
+    <img src=".\static\breizh_bus.jpg" width="300" height="300">
+    <p id="enbas"></p>
+    <div>
+        
+            <a href="{{url_for('client')}}">
+                <img src=".\static\client.jpg" width="100" height="100"></a>
+            Contact Breizhibus : breizhibus@bus.bzh
+            <a href="{{url_for('formuler')}}">
+                <img src=".\static\pro.jpg" width="100" height="100"></a>
+    </div>
+    
+</body>
+
+</html>
+
+<!-- <footer>Contact Breizhibus : breizhibus@bus.bzh</footer> -->
+
+
+<!-- <h2>LIGNE DE BUS</h2>
+     {% for ligne in lignes %}
+        <p>{{ligne['id_ligne']}}</p>
+     {% endfor %}
